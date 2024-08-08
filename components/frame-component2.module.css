@@ -1,0 +1,168 @@
+.frameChild {
+  width: 132px;
+  height: 145px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  display: none;
+}
+.frameItem {
+  height: 25.5px;
+  width: 28px;
+  position: relative;
+  z-index: 2;
+}
+.frameInner {
+  height: 16px;
+  width: 66px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  display: none;
+}
+.groupIcon,
+.whatIsDpl {
+  position: relative;
+  z-index: 1;
+}
+.whatIsDpl {
+  font-weight: 500;
+  white-space: pre-wrap;
+  display: inline-block;
+  min-width: 42px;
+}
+.groupIcon {
+  width: 8.5px;
+  height: 5px;
+  object-fit: contain;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.rectangleGroup {
+  align-self: stretch;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  flex-direction: row;
+  padding: var(--padding-10xs) var(--padding-7xs) var(--padding-11xs);
+  gap: var(--gap-11xs-4);
+  z-index: 2;
+}
+.frameParent,
+.frameWrapper,
+.rectangleGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-sm);
+}
+.whatIsDpl1 {
+  flex: 1;
+  position: relative;
+  line-height: 11px;
+  font-weight: 500;
+  z-index: 2;
+}
+.whatIsDplWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs) 0 var(--padding-6xs);
+  text-align: center;
+}
+.whatIsDpl2,
+.whatIsDpl3 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 2;
+}
+.whatIsDpl2 {
+  font-size: var(--font-size-3xs);
+  color: var(--color-black);
+  min-width: 105px;
+}
+.whatIsDpl3 {
+  min-width: 97px;
+}
+.frameGroup,
+.whatIsDplContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.whatIsDplContainer {
+  flex-direction: row;
+  padding: 0 var(--padding-8xs) 0 var(--padding-10xs);
+}
+.frameGroup {
+  width: 105px;
+  flex-direction: column;
+  gap: var(--gap-10xs);
+  font-size: var(--font-size-4xs-5);
+}
+.rectangleDiv {
+  height: 16px;
+  width: 58px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-lightsteelblue-100);
+  display: none;
+}
+.whatIsDpl4 {
+  position: relative;
+  display: inline-block;
+  min-width: 21px;
+  z-index: 3;
+}
+.frameDiv,
+.rectangleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.rectangleContainer {
+  border-radius: var(--br-10xs);
+  background-color: var(--color-lightsteelblue-100);
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-lg) var(--padding-10xs)
+    var(--padding-lgi);
+  z-index: 2;
+}
+.frameDiv {
+  justify-content: flex-end;
+  padding: 0 var(--padding-5xl) 0 var(--padding-7xl);
+  color: var(--color-white);
+}
+.rectangleParent {
+  flex: 1;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-smi) var(--padding-lg)
+    var(--padding-2xs);
+  gap: var(--gap-4xs-8);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-5xs);
+  color: var(--color-lightsteelblue-100);
+  font-family: var(--font-dm-sans);
+}

@@ -1,0 +1,94 @@
+.componentPairChild {
+  height: 145.5px;
+  width: 132.5px;
+  position: relative;
+  box-shadow: 2px 10px 30px 5px #e9e8fc;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-mediumseagreen);
+  box-sizing: border-box;
+  display: none;
+}
+.componentPairItem {
+  height: 26px;
+  width: 27.5px;
+  position: relative;
+  z-index: 3;
+}
+.frameChild {
+  height: 16px;
+  width: 66px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  display: none;
+}
+.count {
+  white-space: pre-wrap;
+}
+.span {
+  color: var(--color-mediumslateblue);
+}
+.whatIsDplContainer {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 42px;
+  z-index: 1;
+}
+.componentPairInner {
+  width: 8.5px;
+  height: 5px;
+  position: relative;
+  object-fit: contain;
+  z-index: 1;
+}
+.componentPair2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  flex-direction: row;
+  padding: var(--padding-10xs) var(--padding-7xs) var(--padding-11xs);
+  gap: var(--gap-11xs-4);
+  z-index: 3;
+}
+.componentPair,
+.componentPair1,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.componentPair1 {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.componentPair {
+  width: 132.5px;
+  margin: 0 !important;
+  position: absolute;
+  top: -33px;
+  left: 44px;
+  box-shadow: 2px 10px 30px 5px #e9e8fc;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-mediumseagreen);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-xs) var(--padding-84xl)
+    var(--padding-smi);
+  gap: var(--gap-xs-5);
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-5xs);
+  color: var(--color-lightsteelblue-100);
+  font-family: var(--font-dm-sans);
+}

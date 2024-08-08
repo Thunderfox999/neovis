@@ -1,0 +1,209 @@
+.requestIcon {
+  width: 13px;
+  height: 12px;
+  position: relative;
+  object-fit: contain;
+  z-index: 1;
+}
+.requestIconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-15xl) 0 0;
+}
+.whatIsDpl {
+  text-decoration: none;
+  height: 11px;
+  position: relative;
+  line-height: 16px;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 58px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.dPLQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-14xl) 0 0;
+}
+.fullLogo1,
+.groupIcon {
+  position: relative;
+  z-index: 1;
+}
+.groupIcon {
+  height: 28.6px;
+  width: 29px;
+}
+.fullLogo1 {
+  align-self: stretch;
+  height: 26px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.fullLogo1Wrapper {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) 0 0;
+}
+.frameContainer,
+.frameDiv,
+.fullLogo1Wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.frameDiv {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-7);
+}
+.frameContainer {
+  height: 30px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.frameChild {
+  width: 86px;
+  height: 30px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-white);
+  display: none;
+}
+.whatIsDpl1,
+.whatIsDpl2 {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 70px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.whatIsDpl2 {
+  min-width: 67px;
+}
+.rectangleParent {
+  border-radius: var(--br-10xs);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-5xs);
+  gap: var(--gap-11xs);
+  z-index: 1;
+  font-size: var(--font-size-5xs);
+  color: var(--color-lightsteelblue-100);
+}
+.frameGroup,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameGroup {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-lg) 0 0;
+  gap: var(--gap-23xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+  text-align: left;
+  font-size: var(--font-size-smi-5);
+  color: var(--color-mediumslateblue);
+  font-family: var(--font-dm-sans);
+}
+.frameInner,
+.frameItem {
+  position: relative;
+  max-width: 100%;
+}
+.frameItem {
+  align-self: stretch;
+  border-radius: var(--br-10xs);
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.frameInner {
+  height: 27px;
+  width: 400px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  display: none;
+}
+.colorOverlayIcon {
+  width: 5px;
+  height: 7.6px;
+  position: relative;
+  object-fit: contain;
+  z-index: 2;
+}
+.colorOverlayWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs-6) 0 0;
+}
+.whatIsDpl3 {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 28px;
+  white-space: nowrap;
+  z-index: 2;
+}
+.frameParent,
+.rectangleGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+.rectangleGroup {
+  margin-right: -7px;
+  width: 400px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-6xs) var(--padding-27xl);
+  box-sizing: border-box;
+  gap: var(--gap-6xs);
+  max-width: 107%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-2xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-2xs-5);
+  color: var(--color-mediumslateblue);
+  font-family: var(--font-dm-sans);
+}
