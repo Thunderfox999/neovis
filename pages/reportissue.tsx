@@ -1,18 +1,26 @@
 import type { NextPage } from "next";
 import FrameComponent6 from "../components/frame-component6";
 import styles from "./i-report-issue-page.module.css";
+import Link from "next/link";
 
 const IReportIssuePage: NextPage = () => {
+  const backFunctionality = () => {
+    console.log("hello");
+  };
+
   return (
     <div className={styles.iReportIssuePage}>
       <div className={styles.whatIsDplParent}>
-        <b className={styles.whatIsDpl}>Back</b>
-        <img
-          className={styles.colorOverlayIcon}
-          alt=""
-          src="/color-overlay2.svg"
-        />
+        <Link href="/">
+          <b className={styles.whatIsDpl}>Back</b>
+          <img
+            className={styles.colorOverlayIcon}
+            alt=""
+            src="/color-overlay2.svg"
+          />
+        </Link>
       </div>
+
       <div className={styles.iReportIssuePageChild} />
       <div className={styles.iReportIssuePageInner}>
         <div className={styles.logoContainerParent}>
@@ -66,7 +74,9 @@ const IReportIssuePage: NextPage = () => {
               src="/color-overlay-1.svg"
             />
           </div>
-          <a className={styles.whatIsDpl4}>Back</a>
+          <Link href="/" className={styles.whatIsDpl4}>
+            Back
+          </Link>
         </div>
         <div className={styles.frameGroup}>
           <FrameComponent6 />
@@ -94,7 +104,9 @@ const IReportIssuePage: NextPage = () => {
         </div>
       </div>
       <div className={styles.whatIsDplGroup}>
-        <b className={styles.whatIsDpl}>Back</b>
+        <Link href="/" onClick={backFunctionality}>
+          <b className={styles.whatIsDpl}>Back</b>
+        </Link>
         <img
           className={styles.colorOverlayIcon2}
           alt=""

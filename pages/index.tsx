@@ -1,3 +1,5 @@
+"use client";
+
 // import type { NextPage } from "next";
 // import { Button } from "@mui/material";
 // import FrameComponent from "../components/frame-component";
@@ -9,19 +11,20 @@ import type { NextPage } from "next";
 import FrameComponent from "../components/frame-component";
 import FrameComponent1 from "../components/frame-component1";
 import styles from "./request-now-page.module.css";
+import CustomFooter from "../components/footer";
+import Link from "next/link";
 
 const AddReviewPage: NextPage = () => {
   return (
-
     <div className={styles.requestNowPage1}>
-      <div className={styles.whatIsDplParent}>
+      {/* <div className={styles.whatIsDplParent}>
         <b className={styles.whatIsDpl}>Back</b>
         <img
           className={styles.colorOverlayIcon}
           alt=""
           src="/color-overlay3.svg"
         />
-      </div>
+      </div> */}
       <div className={styles.requestNowPage1Child} />
       <FrameComponent rectangle17="/rectangle-17.svg" />
       <section className={styles.frameParent}>
@@ -31,22 +34,11 @@ const AddReviewPage: NextPage = () => {
               <div className={styles.rectangleWrapper}>
                 <div className={styles.frameChild} />
               </div>
-              <img
-                className={styles.groupIcon}
-                loading="lazy"
-                alt=""
-                src="/group-19@2x.png"
-              />
             </div>
           </div>
+          {/* <div className={styles.frameItemleft} /> */}
           <div className={styles.frameItem} />
           <div className={styles.xmlid2Parent}>
-            <img
-              className={styles.xmlid2Icon}
-              loading="lazy"
-              alt=""
-              src="/xmlid-2.svg"
-            />
             <div className={styles.whatIsDpl1}>
               Enhance Your Stay By Booking Our Products And Services, Feel Free
               To Share With Us By Selecting This Menu Options Here -
@@ -76,21 +68,17 @@ const AddReviewPage: NextPage = () => {
                         src="/group-441.svg"
                       />
                       <div className={styles.dPLQuestionPair}>
-                        <b className={styles.whatIsDpl2}>Book Now</b>
+                        <Link href="/request-now-page1">
+                          <b className={styles.whatIsDpl2}>Book Now</b>
+                        </Link>
                       </div>
                     </div>
                   </div>
                   <div className={styles.xmlid2Group}>
-                    <img
-                      className={styles.xmlid2Icon1}
-                      loading="lazy"
-                      alt=""
-                      src="/xmlid-2.svg"
-                    />
                     <FrameComponent1
                       rectangle34="/rectangle-341.svg"
                       group445="/group-445.svg"
-                      group442="/group-441.svg"
+                      group442="/group-441.svg" 
                       wHATISDPL=" Report Issue"
                     />
                   </div>
@@ -158,39 +146,9 @@ const AddReviewPage: NextPage = () => {
           src="/rectangle-17.svg"
         />
       </section>
-      <div className={styles.requestNowPage1Inner}>
-        <div className={styles.frameParent8}>
-          <div className={styles.logoButtonWrapper}>
-            <img
-              className={styles.logoButtonIcon}
-              loading="lazy"
-              alt=""
-              src="/vector-1.svg"
-            />
-          </div>
-          <div className={styles.whatIsDplContainer}>
-            <b
-              className={styles.whatIsDpl4}
-            >{`Customized Message Defined In `}</b>
-          </div>
-          <div className={styles.fullLogo2Parent}>
-            <img
-              className={styles.fullLogo2}
-              loading="lazy"
-              alt=""
-              src="/full-logo-2@2x.png"
-            />
-            <div className={styles.groupWrapper}>
-              <img
-                className={styles.groupIcon1}
-                loading="lazy"
-                alt=""
-                src="/group-15.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+
+      {/* Footer part is this  */}
+      <CustomFooter />
     </div>
 
     // <div className={styles.addReviewPage}>

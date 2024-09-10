@@ -142,10 +142,10 @@
 }
 .dPLQuestionPair {
   align-self: stretch;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   padding: 0 var(--padding-8xl);
 }
 .frameParent3,
@@ -308,9 +308,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   padding: 0 var(--padding-20xl) 0 42px;
-  gap: 3.3px;
 }
 .frameChild6 {
   border-radius: var(--br-10xs);
@@ -379,8 +378,7 @@
   padding: var(--padding-7xl) 0 0;
 }
 .frameParent8,
-.fullLogo2Parent,
-.requestNowPage1Inner {
+.fullLogo2Parent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -390,10 +388,10 @@
   gap: var(--gap-3xs);
 }
 .frameParent8,
-.requestNowPage1Inner {
+/* .requestNowPage1Inner {
   box-sizing: border-box;
   max-width: 100%;
-}
+} */
 .frameParent8 {
   height: 56px;
   justify-content: flex-start;
@@ -401,15 +399,22 @@
   gap: var(--gap-12xs);
 }
 .requestNowPage1Inner {
-  justify-content: flex-end;
-  padding: 0 var(--padding-2xl) 0 var(--padding-3xl);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* padding: 0 var(--padding-2xl) 0 var(--padding-3xl); */
   font-size: var(--font-size-3xs);
   color: var(--color-mediumslateblue);
 }
 .requestNowPage1 {
+  max-width: 426px;
+  margin: 0 auto;
   width: 100%;
   position: relative;
-  background-color: var(--color-ghostwhite-200);
+  /* background-color: var(--color-ghostwhite-200); */
+  background-image: url("../public/backgroundimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -422,4 +427,47 @@
   font-size: var(--font-size-2xs);
   color: var(--color-lightsteelblue-200);
   font-family: var(--font-dm-sans);
+}
+
+
+@media screen and (max-width: 426px) {
+  /* .frameGroup {
+    justify-content: center;
+  } */
+
+  .frameWrapper {
+    margin-left: -185px;
+
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .frameWrapper {
+    margin-left: -154px;
+
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+  .frameChild {
+    top: -20px;
+  }
+
+  .frameItem {
+    display: none;
+  }
+
+  .frameGroup {
+    padding: 0 ;
+  }
+
+  .frameWrapper {
+    display: none;
+  }
+
+  .whatIsDpl1 {
+    margin: 0 auto;
+
+  }
 }

@@ -275,7 +275,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 0 0 var(--padding-25xl);
+  padding: 20px;
   position: relative;
   gap: 38px;
   text-align: left;
@@ -386,6 +386,7 @@
   max-width: 100%;
 }
 .requestNowPage2 {
+  max-width: 426px;
   width: 100%;
   position: relative;
   background-color: var(--color-ghostwhite-200);

@@ -504,7 +504,7 @@
   position: relative;
   font-weight: 500;
   background: linear-gradient(#5048e5, #5048e5), #5048e5;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }
@@ -537,7 +537,7 @@
   position: relative;
   font-weight: 500;
   background: linear-gradient(#5048e5, #5048e5), #5048e5;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   min-width: 40px;
@@ -627,7 +627,7 @@
   position: relative;
   font-weight: 500;
   background: linear-gradient(#5048e5, #5048e5), #5048e5;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }

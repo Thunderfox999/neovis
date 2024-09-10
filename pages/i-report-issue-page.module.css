@@ -219,7 +219,7 @@
 }
 .rectangleGroup {
   margin-right: -52px;
-  width: 400px;
+  width: 426px;
   border-radius: var(--br-9xs);
   background-color: var(--color-white);
   display: flex;
@@ -410,3 +410,7 @@
   color: var(--color-mediumslateblue);
   font-family: var(--font-dm-sans);
 }
+
+/* @media screen and (){
+  
+} */

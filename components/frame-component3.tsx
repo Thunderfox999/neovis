@@ -27,13 +27,13 @@ const FrameComponent3: NextPage<FrameComponent3Type> = ({
 
   return (
     <div className={[styles.xmlid2Parent, className].join(" ")}>
-      <img
+      {/* <img
         className={styles.xmlid2Icon}
         loading="lazy"
         alt=""
         src="/xmlid-2.svg"
         style={xMLID2IconStyle}
-      />
+      /> */}
       <div className={styles.rectangleParent}>
         <div className={styles.frameChild} />
         <div className={styles.frameParent}>

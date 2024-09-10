@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 import styles from "./frame-component1.module.css";
+import Link from "next/link";
 
 export type FrameComponent1Type = {
   className?: string;
@@ -98,9 +99,11 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({
           src={group442}
         />
         <div className={styles.whatIsDplWrapper}>
-          <b className={styles.whatIsDpl} style={wHATISDPLStyle}>
-            {wHATISDPL}
-          </b>
+          <Link href="/reportissue">
+            <b className={styles.whatIsDpl} style={wHATISDPLStyle}>
+              {wHATISDPL}
+            </b>
+          </Link>
         </div>
       </div>
     </div>

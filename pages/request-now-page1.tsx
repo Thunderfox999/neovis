@@ -3,27 +3,29 @@ import FrameComponent4 from "../components/frame-component4";
 import FrameComponent2 from "../components/frame-component2";
 import FrameComponent3 from "../components/frame-component3";
 import styles from "./request-now-page1.module.css";
+import Link from "next/link";
+import CustomFooter from "../components/footer";
 
 const RequestNowPage1: NextPage = () => {
   return (
     <div className={styles.requestNowPage2}>
-      <div className={styles.whatIsDplParent}>
-        <b className={styles.whatIsDpl}>Back</b>
+      {/* <div className={styles.whatIsDplParent}>
+          <Link href="/" className={styles.whatIsDpl}>Back</Link>
         <img
           className={styles.colorOverlayIcon}
           alt=""
           src="/color-overlay1.svg"
         />
       </div>
-      <div className={styles.requestNowPage2Child} />
+      <div className={styles.requestNowPage2Child} /> */}
       <FrameComponent4 />
       <section className={styles.contentStructure}>
-        <img
+        {/* <img
           className={styles.groupIcon}
           loading="lazy"
           alt=""
           src="/group-16@2x.png"
-        />
+        /> */}
         <div className={styles.frameParent}>
           <div className={styles.frameGroup}>
             <div className={styles.vectorParent}>
@@ -99,10 +101,10 @@ const RequestNowPage1: NextPage = () => {
             />
           </div>
         </div>
-        <div className={styles.rectangleContainer}>
+        {/* <div className={styles.rectangleContainer}>
           <div className={styles.frameChild2} />
           <div className={styles.frameChild3} />
-        </div>
+        </div> */}
       </section>
       <div className={styles.footer}>
         <img
@@ -111,40 +113,8 @@ const RequestNowPage1: NextPage = () => {
           alt=""
           src="/rectangle-17.svg"
         />
-        <footer className={styles.footerContent}>
-          <div className={styles.frameParent3}>
-            <div className={styles.footerIconWrapper}>
-              <img
-                className={styles.footerIcon}
-                loading="lazy"
-                alt=""
-                src="/vector-1.svg"
-              />
-            </div>
-            <div className={styles.whatIsDplWrapper1}>
-              <b
-                className={styles.whatIsDpl5}
-              >{`Customized Message Defined In `}</b>
-            </div>
-            <div className={styles.fullLogo2Parent}>
-              <img
-                className={styles.fullLogo2}
-                loading="lazy"
-                alt=""
-                src="/full-logo-2@2x.png"
-              />
-              <div className={styles.groupWrapper}>
-                <img
-                  className={styles.groupIcon1}
-                  loading="lazy"
-                  alt=""
-                  src="/group-15.svg"
-                />
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
+      <CustomFooter />
     </div>
   );
 };

@@ -41,7 +41,6 @@
   width: 29px;
 }
 .fullLogo1 {
-  align-self: stretch;
   height: 26px;
   max-width: 100%;
   overflow: hidden;
@@ -73,7 +72,6 @@
   justify-content: flex-end;
   padding: 0 0 var(--padding-11xs);
   box-sizing: border-box;
-  min-width: 134px;
 }
 .frameChild {
   width: 86px;
@@ -116,13 +114,11 @@
   box-sizing: border-box;
 }
 .frameGroup {
-  flex: 1;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-start;
   padding: var(--padding-lg) 0 0;
-  gap: var(--gap-23xl);
-  max-width: 100%;
+  width: 100%;
 }
 .frameWrapper {
   align-items: flex-start;
@@ -153,3 +149,10 @@
   color: var(--color-mediumslateblue);
   font-family: var(--font-dm-sans);
 }
+
+
+@media screen and (max-width: 376px) {
+  .fullLogo1 {
+    height: 24px;
+ }
+ }

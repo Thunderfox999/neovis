@@ -41,21 +41,23 @@ const FrameComponent: NextPage<FrameComponentType> = ({
               <div className={styles.whatIsDplWrapper}>
                 <a className={styles.whatIsDpl}>Welcome</a>
               </div>
-              <img className={styles.groupIcon} alt="" src="/group.svg" />
-              <div className={styles.fullLogo1Wrapper}>
-                <img
-                  className={styles.fullLogo1}
-                  loading="lazy"
-                  alt=""
-                  src="/full-logo-1@2x.png"
-                />
-              </div>
+              {/* <img className={styles.groupIcon} alt="" src="/group.svg" /> */}
             </div>
           </div>
-          <div className={styles.rectangleParent}>
-            <div className={styles.frameChild} />
-            <a className={styles.whatIsDpl1}>{`Property : XYZ 52 `}</a>
-            <a className={styles.whatIsDpl2}>Room No : BK505</a>
+          <div className={styles.fullLogo1Wrapper}>
+            <img
+              className={styles.fullLogo1}
+              loading="lazy"
+              alt=""
+              src="/full-logo-1@2x.png"
+            />
+          </div>
+          <div>
+            <div className={styles.rectangleParent}>
+              <div className={styles.frameChild} />
+              <a className={styles.whatIsDpl1}>{`Property : XYZ 52 `}</a>
+              <a className={styles.whatIsDpl2}>Room No : BK505</a>
+            </div>
           </div>
         </div>
       </div>

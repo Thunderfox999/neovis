@@ -54,15 +54,17 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({ className = "" }) => {
                 />
               </div>
             </div>
-            <div className={styles.frameContainer}>
-              <button className={styles.rectangleContainer}>
-                <div className={styles.rectangleDiv} />
-                <b className={styles.whatIsDpl3}>Submit</b>
-              </button>
-            </div>
           </div>
+          
         </div>
+        <div className={styles.frameContainer}>
+            <button className={styles.rectangleContainer}>
+              <div className={styles.rectangleDiv} />
+              <b className={styles.whatIsDpl3}>Submit</b>
+            </button>
+          </div>
       </div>
+      
     </div>
   );
 };

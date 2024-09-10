@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./frame-component4.module.css";
+import Link from "next/link";
 
 export type FrameComponent4Type = {
   className?: string;
@@ -8,39 +9,41 @@ export type FrameComponent4Type = {
 const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
   return (
     <section className={[styles.frameParent, className].join(" ")}>
-      <header className={styles.frameWrapper}>
+     <div className={styles.frameWrapper}>
         <div className={styles.frameGroup}>
           <div className={styles.frameContainer}>
             <div className={styles.frameDiv}>
-              <div className={styles.requestIconWrapper}>
+              <div className={styles.requestNowButtonWrapper}>
                 <img
-                  className={styles.requestIcon}
+                  className={styles.requestNowButton}
                   loading="lazy"
                   alt=""
                   src="/vector.svg"
                 />
               </div>
-              <div className={styles.dPLQuestion}>
+              <div className={styles.whatIsDplWrapper}>
                 <a className={styles.whatIsDpl}>Welcome</a>
               </div>
-              <img className={styles.groupIcon} alt="" src="/group.svg" />
-              <div className={styles.fullLogo1Wrapper}>
-                <img
-                  className={styles.fullLogo1}
-                  loading="lazy"
-                  alt=""
-                  src="/full-logo-1@2x.png"
-                />
-              </div>
+              {/* <img className={styles.groupIcon} alt="" src="/group.svg" /> */}
             </div>
           </div>
-          <div className={styles.rectangleParent}>
-            <div className={styles.frameChild} />
-            <a className={styles.whatIsDpl1}>{`Property : XYZ 52 `}</a>
-            <a className={styles.whatIsDpl2}>Room No : BK505</a>
+          <div className={styles.fullLogo1Wrapper}>
+            <img
+              className={styles.fullLogo1}
+              loading="lazy"
+              alt=""
+              src="/full-logo-1@2x.png"
+            />
+          </div>
+          <div>
+            <div className={styles.rectangleParent}>
+              <div className={styles.frameChild} />
+              <a className={styles.whatIsDpl1}>{`Property : XYZ 52 `}</a>
+              <a className={styles.whatIsDpl2}>Room No : BK505</a>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
       <img
         className={styles.frameItem}
         loading="lazy"
@@ -57,7 +60,9 @@ const FrameComponent4: NextPage<FrameComponent4Type> = ({ className = "" }) => {
             src="/color-overlay-1.svg"
           />
         </div>
-        <a className={styles.whatIsDpl3}>Back</a>
+        <Link href="/" className={styles.whatIsDpl3}>
+          Back
+        </Link>
       </div>
     </section>
   );
