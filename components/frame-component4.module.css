@@ -41,6 +41,7 @@
   width: 29px;
 }
 .fullLogo1 {
+  margin-left: 63px;
   align-self: stretch;
   height: 26px;
   max-width: 100%;
@@ -49,7 +50,7 @@
   object-fit: cover;
 }
 .fullLogo1Wrapper {
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--padding-6xl) 0 0;
@@ -68,7 +69,7 @@
 }
 .frameContainer {
   height: 30px;
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0 var(--padding-11xs);
@@ -119,6 +120,7 @@
   min-width: 67px;
 }
 .rectangleParent {
+  margin-left: 69px;
   border-radius: var(--br-10xs);
   background-color: var(--color-white);
   display: flex;
@@ -208,8 +210,8 @@
   max-width: 100%;
 }
 .rectangleGroup {
-  margin-right: -7px;
-  width: 400px;
+  /* margin-right: -7px; */
+  width: 457px;
   border-radius: var(--br-9xs);
   background-color: var(--color-white);
   flex-direction: row;

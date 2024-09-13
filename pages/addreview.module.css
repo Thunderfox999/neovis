@@ -72,10 +72,12 @@
 }
 
 .count {
+  font-size: 12px;
   white-space: pre-wrap;
 }
 
 .span {
+  font-size: 12px;
   color: var(--color-mediumslateblue);
 }
 
@@ -134,6 +136,7 @@
 }
 
 .whatIsDpl1 {
+  font-size: 10px;
   margin: 0 auto;
   flex: 1;
   position: relative;
@@ -154,6 +157,7 @@
 
 .whatIsDpl2,
 .whatIsDpl3 {
+  font-size: 10px;
   margin: 0 auto;
   position: relative;
   font-weight: 500;
@@ -162,7 +166,8 @@
 }
 
 .whatIsDpl2 {
-  font-size: var(--font-size-3xs);
+  font-size: 12px;
+  /* font-size: var(--font-size-3xs); */
   color: var(--color-black);
   min-width: 99px;
 }
@@ -218,12 +223,15 @@
   display: none;
 }
 
-.whatIsDpl4 {
-  font: white;
+.whatIsDpl5 {
+  margin-top: 17px;
+  font-weight: 700;
+  height: 20px;
+  color:  white;
   font-size: 12px;
   border-color: transparent;
   border-radius: 5px;
-  width: 70px;
+  width: 75px;
   background-color: #9f9cce;
   position: relative;
   display: inline-block;
@@ -231,17 +239,9 @@
   z-index: 3;
 }
 
-.whatIsDpl4:hover {
+.whatIsDpl5:hover {
   background-color: var(--color-mediumseagreen);
-}
-
-.btn-15:hover:after {
-  left: 0;
-  width: 100%;
-}
-
-.btn-15:active {
-  top: 2px;
+  color: white;
 }
 
 .rectangleGroup {
@@ -268,7 +268,7 @@
 }
 
 .vectorParent {
-  width: 188px;
+  width: 100%;
   justify-content: space-evenly;
   height: 150px;
   /* flex: 1; */
@@ -285,7 +285,8 @@
 .frameGroup {
   align-self: stretch;
   flex-direction: row;
-  gap: var(--gap-4xl);
+  gap: 20px;
+
 }
 
 .frameGroup,
@@ -293,18 +294,18 @@
 .mixedSequence {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .mixedSequence {
   align-self: stretch;
   flex-direction: row;
   padding: 0 var(--padding-11xs) 0 0;
-  gap: var(--gap-4xl);
+  gap: 20px;
 }
 
 .frameParent {
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
   gap: var(--gap-base);
 }
@@ -484,4 +485,33 @@
   font-size: var(--font-size-2xs);
   color: var(--color-lightsteelblue-200);
   font-family: var(--font-dm-sans);
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Evenly distribute space between buttons */
+  align-items: center; /* Align buttons in the center vertically */
+  gap: 20px; /* Adds space between the buttons */
+  padding: 10px 20px; /* Adds padding to the navbar */
+  background-color: transparent; /* Light background color for the navbar */
+}
+
+.navItem {
+  flex: 1; /* Makes the buttons take equal space */
+ font-weight: 600;
+  border: none; /* Remove border */
+  background-color: #F8F7FF; /* Default button background */
+  color: #333333; /* Default text color */
+  font-size: 12px; /* Button text size */
+  text-align: center; /* Align the text to the center */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Rounded corners for the buttons */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.active {
+  
+  color: #007bff; /* Active tab text color */
 }

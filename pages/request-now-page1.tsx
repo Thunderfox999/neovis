@@ -80,10 +80,12 @@ const RequestNowPage1: NextPage = () => {
                 </div>
               </div>
               <div className={styles.frameWrapper3}>
-                <div className={styles.rectangleGroup}>
-                  <div className={styles.rectangleDiv} />
-                  <b className={styles.whatIsDpl4}>Book</b>
-                </div>
+                {/* <div className={styles.rectangleGroup}> */}
+                  {/* <div className={styles.rectangleDiv} /> */}
+                  <button className={styles.whatIsDpl4}>Book</button>
+
+
+                {/* </div> */}
               </div>
             </div>
             <FrameComponent2 group289="/group-289-1@2x.png" />
@@ -93,7 +95,7 @@ const RequestNowPage1: NextPage = () => {
             <FrameComponent2 propFlex="0.8182" group289="/group-289-2@2x.png" />
           </div>
           <div className={styles.mixedSequence}>
-            <FrameComponent2 propFlex="0.8182" group289="/group-289-2@2x.png" />
+            <FrameComponent2 propFlex="0.9" group289="/group-289-2@2x.png" />
             <FrameComponent3
               propBottom="41px"
               propLeft="unset"
@@ -116,6 +118,7 @@ const RequestNowPage1: NextPage = () => {
       </div>
       <CustomFooter />
     </div>
+    
   );
 };
 

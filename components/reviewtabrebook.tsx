@@ -10,7 +10,7 @@ export type FrameComponent2Type = {
   propFlex?: CSSProperties["flex"];
 };
 
-const FrameComponent2: NextPage<FrameComponent2Type> = ({
+const Reviewcomp: NextPage<FrameComponent2Type> = ({
   className = "",
   propFlex,
   group289,
@@ -24,9 +24,9 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({
   return (
     <div
       className={[styles.rectangleParent, className].join(" ")}
-      style={frameDivStyle}>
+      style={frameDivStyle}
+    >
       <div className={styles.frameChild} />
-     <div className={styles.gap}>
       <div className={styles.frameParent}>
         <img
           className={styles.frameItem}
@@ -51,21 +51,21 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({
       </div>
       <div className={styles.frameGroup}>
         <div className={styles.whatIsDplWrapper}>
-          <div className={styles.whatIsDpl1}>Product ID - OD45620000358645</div>
+          <div className={styles.whatIsDpl1}>Service ID -OD45620000586963</div>
         </div>
-        <div className={styles.whatIsDpl2}>Bottled Water | Lorem</div>
+        <div className={styles.whatIsDpl2}>Arrival Clean | Lorem</div>
         <div className={styles.whatIsDplContainer}>
           <div className={styles.whatIsDpl3}>Lorem ipsum dolor sit ...</div>
         </div>
       </div>
-      </div>
       <div className={styles.frameDiv}>
-        <div className={styles.frameWrapper3}>
-          {/* <button className={styles.whatIsDpl4}>Book</button> */}
+        <div className={styles.rectangleContainer}>
+          <div className={styles.rectangleDiv} />
+          <button className={styles.whatIsDpl4}>Book</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default FrameComponent2;
+export default Reviewcomp;
