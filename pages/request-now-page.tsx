@@ -123,9 +123,9 @@ const RequestNowPage: NextPage = () => {
                         alt=""
                         src="/group-441.svg"
                       />
-                      <div className={styles.dPLQuestionPair}>
+                      {/* <div className={styles.dPLQuestionPair}>
                         <b className={styles.whatIsDpl2}>Add Review</b>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <FrameComponent1
