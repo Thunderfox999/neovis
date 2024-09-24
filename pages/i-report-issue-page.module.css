@@ -394,7 +394,7 @@
   font-size: var(--font-size-3xs);
 }
 .iReportIssuePage {
-  width: 100%;
+  width: 425px;
   position: relative;
   background-color: var(--color-ghostwhite-200);
   overflow: hidden;

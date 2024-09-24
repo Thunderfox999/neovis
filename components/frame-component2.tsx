@@ -26,7 +26,7 @@ const FrameComponent2: NextPage<FrameComponent2Type> = ({
       className={[styles.rectangleParent, className].join(" ")}
       style={frameDivStyle}>
       <div className={styles.frameChild} />
-     <div className={styles.gap}>
+     <div className={styles.frameContainer}>
       <div className={styles.frameParent}>
         <img
           className={styles.frameItem}

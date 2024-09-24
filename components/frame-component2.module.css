@@ -53,7 +53,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-10xs) 0 0;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+  align-self: stretch;
+  
 }
+
 
 .rectangleGroup {
   align-self: stretch;
