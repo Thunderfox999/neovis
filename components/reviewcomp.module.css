@@ -1,36 +1,36 @@
 .rectangleParent {
-    align-self: stretch;
-    border-radius: var(--br-10xs);
-    background-color: var(--color-ghostwhite-100);
-    flex-direction: row;
-    padding: var(--padding-10xs) var(--padding-7xs) var(--padding-11xs);
-    gap: var(--gap-11xs-4);
-    z-index: 2;
-  }
-  
-  .frameDiv,
-  .frameWrapper,
-  .rectangleParent {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  align-self: stretch;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  flex-direction: row;
+  padding: var(--padding-10xs) var(--padding-7xs) var(--padding-11xs);
+  gap: var(--gap-11xs-4);
+  z-index: 2;
+}
 
-  .frameChild {
-    width: 132px;
-    height: 145px;
-    position: relative;
-    border-radius: var(--br-8xs);
-    display: none;
-  }
+.frameDiv,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-  .frameParent {
-    /* flex: 1; */
-    flex-direction: column;
-    gap: var(--gap-base);
-  }
+.frameChild {
+  width: 132px;
+  height: 145px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  display: none;
+}
 
-  .frameGroup,
+.frameParent {
+  /* flex: 1; */
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+
+.frameGroup,
 .frameParent,
 .mixedSequence {
   display: flex;
@@ -39,13 +39,13 @@
 }
 
 .frameItem {
-    height: 26px;
-    width: 27.5px;
-    position: relative;
-    z-index: 2;
-  }
+  height: 26px;
+  width: 27.5px;
+  position: relative;
+  z-index: 2;
+}
 
-  .frameDiv,
+.frameDiv,
 .frameWrapper,
 .rectangleParent {
   display: flex;
@@ -60,40 +60,40 @@
 }
 
 .rectangleGroup {
-    border-radius: var(--br-10xs);
-    background-color: var(--color-lightsteelblue-100);
-    flex-direction: row;
-    padding: var(--padding-11xs) var(--padding-lgi) var(--padding-8xs);
-    z-index: 2;
-  }
-  
-  .frameWrapper3,
-  .rectangleGroup,
-  .vectorParent {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  border-radius: var(--br-10xs);
+  background-color: var(--color-lightsteelblue-100);
+  flex-direction: row;
+  padding: var(--padding-11xs) var(--padding-lgi) var(--padding-8xs);
+  z-index: 2;
+}
 
-  .frameInner {
-    height: 16px;
-    width: 66px;
-    position: relative;
-    border-radius: var(--br-10xs);
-    background-color: var(--color-ghostwhite-100);
-    display: none;
-  }
+.frameWrapper3,
+.rectangleGroup,
+.vectorParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-  .whatIsDpl {
-    position: absolute;
-    height: 100%;
-    width: 70%;
-    top: 0;
-    left: 30%;
-    display: inline-block;
-  }
+.frameInner {
+  height: 16px;
+  width: 66px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-ghostwhite-100);
+  display: none;
+}
 
-  .frameContainer,
+.whatIsDpl {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  top: 0;
+  left: 30%;
+  display: inline-block;
+}
+
+.frameContainer,
 .frameParent1,
 .frameWrapper2,
 .whatIsDplFrame {
@@ -109,52 +109,51 @@
 }
 
 .groupIcon {
-    height: 45px;
-    width: 51.7px;
-    position: absolute;
-    margin: 0 !important;
-    top: 15px;
-    left: -13px;
-    object-fit: contain;
-    z-index: 1;
-  }
+  height: 45px;
+  width: 51.7px;
+  position: absolute;
+  margin: 0 !important;
+  top: 15px;
+  left: -13px;
+  object-fit: contain;
+  z-index: 1;
+}
 
-  .frameGroup {
-    align-self: stretch;
-    flex-direction: row;
-    gap: 20px;
-  
-  }
-  
-  .frameGroup,
-  .frameParent,
-  .mixedSequence {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
+.frameGroup {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 20px;
+}
 
-  .whatIsDplWrapper {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 var(--padding-9xs) 0 var(--padding-8xs);
-    text-align: center;
-  }
+.frameGroup,
+.frameParent,
+.mixedSequence {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
-  .whatIsDpl1 {
-    font-size: 10px;
-    margin: 0 auto;
-    flex: 1;
-    position: relative;
-    line-height: 11px;
-    font-weight: 500;
-    z-index: 2;
-  }
+.whatIsDplWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs) 0 var(--padding-8xs);
+  text-align: center;
+}
 
-  .whatIsDpl2,
+.whatIsDpl1 {
+  font-size: 10px;
+  margin: 0 auto;
+  flex: 1;
+  position: relative;
+  line-height: 11px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.whatIsDpl2,
 .whatIsDpl3 {
   font-size: 10px;
   margin: 0 auto;
@@ -172,14 +171,14 @@
 }
 
 .whatIsDplContainer {
-    position: relative;
-    font-weight: 500;
-    display: inline-block;
-    min-width: 42px;
-    z-index: 1;
-  }
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 42px;
+  z-index: 1;
+}
 
-  .whatIsDpl2,
+.whatIsDpl2,
 .whatIsDpl3 {
   font-size: 10px;
   margin: 0 auto;
@@ -190,11 +189,10 @@
 }
 
 .whatIsDpl3 {
+  min-width: 97px;
+}
 
-    min-width: 97px;
-  }
-
-  .frameDiv,
+.frameDiv,
 .frameWrapper,
 .rectangleParent {
   display: flex;
@@ -203,23 +201,23 @@
 }
 
 .frameDiv {
-    align-self: stretch;
-    flex-direction: row;
-    gap: var(--gap-xs-5);
-  }
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xs-5);
+}
 
-  .rectangleContainer {
-    height: 467px;
-    width: 6px;
-    position: relative;
-    z-index: 1;
-  }
+.rectangleContainer {
+  height: 467px;
+  width: 6px;
+  position: relative;
+  z-index: 1;
+}
 
-  .rectangleDiv {
-    height: 16px;
-    width: 58px;
-    position: relative;
-    border-radius: var(--br-10xs);
-    background-color: var(--color-mediumseagreen);
-    display: none;
-  }
+.rectangleDiv {
+  height: 16px;
+  width: 58px;
+  position: relative;
+  border-radius: var(--br-10xs);
+  background-color: var(--color-mediumseagreen);
+  display: none;
+}

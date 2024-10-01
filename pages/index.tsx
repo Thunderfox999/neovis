@@ -134,12 +134,12 @@ const AddReviewPage: NextPage = () => {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           className={styles.frameChild6}
           loading="lazy"
           alt=""
           src="/rectangle-17.svg"
-        />
+        /> */}
       </section>
 
       {/* Footer part is this  */}

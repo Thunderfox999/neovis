@@ -218,8 +218,8 @@
   z-index: 2;
 }
 .rectangleGroup {
-  margin-right: -52px;
-  width: 426px;
+  /* margin-right: -52px; */
+  min-width: 426px;
   border-radius: var(--br-9xs);
   background-color: var(--color-white);
   display: flex;
@@ -258,6 +258,7 @@
 .frameGroup {
   flex-direction: column;
   align-items: flex-start;
+  margin:30px;
 }
 .frameParent,
 .iReportIssuePageInner1 {
@@ -267,7 +268,6 @@
 .frameParent {
   flex-direction: column;
   align-items: flex-end;
-  padding: 0 45px;
   gap: var(--gap-6xl);
   text-align: left;
   font-size: var(--font-size-2xs-5);
@@ -394,8 +394,11 @@
   font-size: var(--font-size-3xs);
 }
 .iReportIssuePage {
-  width: 425px;
+  max-width: 425px;
   position: relative;
+  background-image: url(/_next/static/media/backgroundimage.53252e1b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--color-ghostwhite-200);
   overflow: hidden;
   display: flex;
@@ -411,6 +414,14 @@
   font-family: var(--font-dm-sans);
 }
 
-/* @media screen and (){
-  
-} */
+@media screen and (max-width: 376px) {
+  .rectangleGroup {
+    min-width: 386px;
+  }
+ }
+
+ @media screen and (max-width: 321px) {
+  .rectangleGroup {
+    min-width: 336px;
+  }
+ }

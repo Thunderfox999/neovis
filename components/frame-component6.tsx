@@ -8,7 +8,7 @@ export type FrameComponent6Type = {
 const FrameComponent6: NextPage<FrameComponent6Type> = ({ className = "" }) => {
   return (
     <div className={[styles.xmlid2Parent, className].join(" ")}>
-      <img
+      {/* <img
         className={styles.xmlid2Icon}
         loading="lazy"
         alt=""
@@ -19,7 +19,7 @@ const FrameComponent6: NextPage<FrameComponent6Type> = ({ className = "" }) => {
         loading="lazy"
         alt=""
         src="/xmlid-2.svg"
-      />
+      /> */}
       <div className={styles.rectangleParent}>
         <div className={styles.frameChild} />
         <div className={styles.whatIsDplParent}>

@@ -163,6 +163,7 @@
   justify-content: flex-start;
 }
 .rectangleParent {
+ 
   flex: 1;
   box-shadow: 2px 10px 20px 5px #e9e8fc;
   border-radius: var(--br-8xs);
@@ -174,7 +175,10 @@
   z-index: 2;
 }
 .xmlid2Parent {
-  align-self: stretch;
+  /* align-self: stretch; */
+  width:100%
+  ;
+  margin:0 auto;
   flex-direction: row;
   position: relative;
   text-align: left;

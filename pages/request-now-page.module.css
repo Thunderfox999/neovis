@@ -431,20 +431,15 @@
 
 
 @media screen and (max-width: 426px) {
-  /* .frameGroup {
-    justify-content: center;
-  } */
 
   .frameWrapper {
     margin-left: -185px;
-
   }
 }
 
 @media screen and (max-width: 376px) {
   .frameWrapper {
     margin-left: -154px;
-
   }
 
 }

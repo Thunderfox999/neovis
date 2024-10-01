@@ -1,211 +1,156 @@
 import type { NextPage } from "next";
-import FrameComponent4 from "../components/frame-component4";
-import FrameComponent2 from "../components/frame-component2";
-import FrameComponent3 from "../components/frame-component3";
-import styles from "./addreview.module.css";
-import Link from "next/link";
-import CustomFooter from "../components/footer";
 import { useState } from "react";
-import Reviewcomp from "../components/reviewtabrebook";
+import styles from "./addreview.module.css";
+import CustomFooter from "../components/footer";
+import FrameComponent from "../components/frame-component";
+import Link from "next/link";
+import AddReviewPage from "./review-symbol";
 
-const RequestNowPage1: NextPage = () => {
+interface ServiceCardProps {
+  count: string;
+  id: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonColor: string;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  count,
+  id,
+  title,
+  description,
+  buttonText,
+  buttonColor,
+}) => (
+  <div className={styles.serviceCard}>
+    <div className={styles.cardHeader}>
+      <div className={styles.countWrapper}>
+        <span className={styles.count}>Count : {count}</span>
+      </div>
+    </div>
+    <div className={styles.cardContent}>
+      <p className={styles.serviceId}>{id}</p>
+      <h3 className={styles.serviceTitle}>{title}</h3>
+      <p className={styles.serviceDescription}>{description}</p>
+    </div>
+    <button className={`${styles.bookButton} ${styles[buttonColor]}`}>
+      {buttonText}
+    </button>
+  </div>
+);
+
+const RequestNowPage: NextPage = () => {
   const [activeTab, setActiveTab] = useState("productServices");
 
+  const services = [
+    {
+      count: "01",
+      id: "Service ID - OD45620000586963",
+      title: "Arrival Clean | Lorem",
+      description: "Lorem ipsum dolor sit ...",
+      buttonText: "Re-Book",
+      buttonColor: "purpleButton",
+    },
+    {
+      count: "01",
+      id: "Product ID - OD45620000586945",
+      title: "Bottled Water | Lorem",
+      description: "Lorem ipsum dolor sit ...",
+      buttonText: "Re-Book",
+      buttonColor: "purpleButton",
+    },
+    {
+      count: "01",
+      id: "Service ID - OD45620000586963",
+      title: "Arrival Clean | Lorem",
+      description: "Lorem ipsum dolor sit ...",
+      buttonText: "Re-Book",
+      buttonColor: "purpleButton",
+    },
+    {
+      count: "01",
+      id: "Product ID - OD45620000586945",
+      title: "Bottled Water | Lorem",
+      description: "Lorem ipsum dolor sit ...",
+      buttonText: "Re-Book",
+      buttonColor: "purpleButton",
+    },
+  ];
+
   return (
-    <div className={styles.requestNowPage2}>
-      <FrameComponent4 />
-      <section className={styles.tabsSection}>
-        <nav className={styles.navbar}>
-          <button
-            className={`${styles.navItem} ${
-              activeTab === "productServices" ? styles.active : ""
-            }`}
-            onClick={() => setActiveTab("productServices")}>
-            Product/Services
-          </button>
-          <button
-            className={`${styles.navItem} ${
-              activeTab === "reportFeedback" ? styles.active : ""
-            }`}
-            onClick={() => setActiveTab("reportFeedback")}>
-            Report Feedback
-          </button>
-          <Link href="/FeedbackForm">
+    <>
+      <div className={styles.requestNowPage}>
+        <FrameComponent rectangle17="/rectangle-17.svg" />
+        <div className={styles.rectangleGroup}>
+          <div className={styles.frameInner} />
+          <div className={styles.colorOverlayWrapper}>
+            <img
+              className={styles.colorOverlayIcon1}
+              loading="lazy"
+              alt=""
+              src="/color-overlay-1.svg"
+            />
+          </div>
+          <Link href="/" className={styles.whatIsDpl4}>
+            Back
+          </Link>
+        </div>
+        <section className={styles.tabsSection}>
+          <nav className={styles.navbar}>
+            <button
+              className={`${styles.navItem} ${
+                activeTab === "productServices" ? styles.active : ""
+              }`}
+              onClick={() => setActiveTab("productServices")}
+            >
+              Product/Services
+            </button>
+            <button
+              className={`${styles.navItem} ${
+                activeTab === "reportFeedback" ? styles.active : ""
+              }`}
+              onClick={() => setActiveTab("reportFeedback")}
+            >
+              Report Feedback
+            </button>
             <button
               className={`${styles.navItem} ${
                 activeTab === "stayingExperience" ? styles.active : ""
               }`}
-              onClick={() => setActiveTab("stayingExperience")}>
+              onClick={() => setActiveTab("stayingExperience")}
+            >
               Staying Experience
             </button>
-          </Link>
-        </nav>
+          </nav>
 
-        {activeTab === "productServices" && (
-          <section className={styles.contentStructure}>
-            <div className={styles.frameParent}>
-              <div className={styles.frameGroup}>
-                <div className={styles.vectorParent}>
-                  <img
-                    className={styles.frameChild}
-                    alt=""
-                    src="/rectangle-28.svg"
-                  />
-                  <div className={styles.frameContainer}>
-                    <div className={styles.frameDiv}>
-                      <img
-                        className={styles.frameItem}
-                        loading="lazy"
-                        alt=""
-                        src="/group-404.svg"
-                      />
-                      <div className={styles.frameWrapper}>
-                        <div className={styles.rectangleParent}>
-                          <div className={styles.frameInner} />
-                          <div className={styles.whatIsDplContainer}>
-                            <span className={styles.count}>{`Count :  `}</span>
-                            <span className={styles.span}>01</span>
-                            <span>{` `}</span>
-                          </div>
-                          <div className={styles.frameWrapper1}>
-                            <img
-                              className={styles.frameChild1}
-                              loading="lazy"
-                              alt=""
-                              src="/group-289@2x.png"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.frameWrapper2}>
-                      <div className={styles.frameParent1}>
-                        <div className={styles.whatIsDplWrapper}>
-                          <div className={styles.whatIsDpl1}>
-                            Service ID -OD45620000586963
-                          </div>
-                        </div>
-                        <div className={styles.whatIsDpl2}>
-                          Arrival Clean | Lorem
-                        </div>
-                        <div className={styles.whatIsDplFrame}>
-                          <div className={styles.whatIsDpl3}>
-                            Lorem ipsum dolor sit ...
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameWrapper3}>
-                    <button className={styles.whatIsDpl5}>Re-Book</button>
-                  </div>
-                </div>
-                <Reviewcomp group289="/group-289-1@2x.png" />
-              </div>
-              <div className={styles.frameGroup}>
-                <Reviewcomp />
-                <Reviewcomp group289="/group-289-2@2x.png" />
-              </div>
-              <div className={styles.mixedSequence}>
-                <Reviewcomp group289="/group-289-2@2x.png" />
-                <Reviewcomp />
-              </div>
-            </div>
-          </section>
-        )}
-
-        {activeTab === "reportFeedback" && (
-          <section className={styles.contentStructure}>
-            <div className={styles.frameParent}>
-              <div className={styles.frameGroup}>
-                <div className={styles.vectorParent}>
-                  <img
-                    className={styles.frameChild}
-                    alt=""
-                    src="/rectangle-28.svg"
-                  />
-                  <div className={styles.frameContainer}>
-                    <div className={styles.frameDiv}>
-                      <img
-                        className={styles.frameItem}
-                        loading="lazy"
-                        alt=""
-                        src="/group-404.svg"
-                      />
-                      <div className={styles.frameWrapper}>
-                        <div className={styles.rectangleParent}>
-                          <div className={styles.frameInner} />
-                          <div className={styles.whatIsDplContainer}>
-                            <span className={styles.count}>{`Count :  `}</span>
-                            <span className={styles.span}>01</span>
-                            <span>{` `}</span>
-                          </div>
-                          <div className={styles.frameWrapper1}>
-                            <img
-                              className={styles.frameChild1}
-                              loading="lazy"
-                              alt=""
-                              src="/group-289@2x.png"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.frameWrapper2}>
-                      <div className={styles.frameParent1}>
-                        <div className={styles.whatIsDplWrapper}>
-                          <div className={styles.whatIsDpl1}>
-                            Service ID -OD45620000586963
-                          </div>
-                        </div>
-                        <div className={styles.whatIsDpl2}>
-                          Arrival Clean | Lorem
-                        </div>
-                        <div className={styles.whatIsDplFrame}>
-                          <div className={styles.whatIsDpl3}>
-                            Lorem ipsum dolor sit ...
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.frameWrapper3}>
-                    <button className={styles.whatIsDpl5}>Re-Book</button>
-                  </div>
-                </div>
-                <Reviewcomp group289="/group-289-1@2x.png" />
-              </div>
-              <div className={styles.frameGroup}>
-                <Reviewcomp />
-                <Reviewcomp group289="/group-289-2@2x.png" />
-              </div>
-              <div className={styles.mixedSequence}>
-                <Reviewcomp group289="/group-289-2@2x.png" />
-                <Reviewcomp />
-              </div>
-            </div>
-          </section>
-        )}
-
-        {activeTab === "stayingExperience" && (
-          <section className={styles.contentStructure}>
-            {/* Add content for Staying Experience tab here */}
-            <p>Staying Experience section is under construction.</p>
-          </section>
-        )}
-      </section>
-
-      <div className={styles.footer}>
-        <img
-          className={styles.footerChild}
-          loading="lazy"
-          alt=""
-          src="/rectangle-17.svg"
-        />
+          <div className={styles.serviceGrid}>
+            {activeTab === "productServices" && (
+              <>
+                {services.map((service, index) => (
+                  <ServiceCard key={index} {...service} />
+                ))}
+              </>
+            )}
+            {activeTab === "reportFeedback" && (
+              <>
+                {services.map((service, index) => (
+                  <ServiceCard key={index} {...service} />
+                ))}
+              </>
+            )}
+        
+          </div>
+          {activeTab === "stayingExperience" && (
+              <>
+                <AddReviewPage />
+              </>
+            )}
+        </section>
+        <CustomFooter />
       </div>
-      <CustomFooter />
-    </div>
+    </>
   );
 };
 
-export default RequestNowPage1;
+export default RequestNowPage;

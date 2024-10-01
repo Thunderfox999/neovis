@@ -11,131 +11,22 @@ import FrameComponent1 from "../components/frame-component1";
 const AddReviewPage: NextPage = () => {
   return (
     <div className={styles.addReviewPage}>
-      <div className={styles.whatIsDplParent}>
+      {/* <div className={styles.whatIsDplParent}>
         <b className={styles.whatIsDpl}>Back</b>
         <img
           className={styles.colorOverlayIcon}
           alt=""
           src="/color-overlay.svg"
         />
-      </div>
-      <FrameComponent
-        frameDivPadding="0px 0px 4px"
-        rectangle17="/rectangle-17.svg"
-      />
-      <div className={styles.rectangleParent}>
-        <div className={styles.frameChild} />
-        <div className={styles.overlayContainer}>
-          <img
-            className={styles.colorOverlayIcon1}
-            loading="lazy"
-            alt=""
-            src="/color-overlay-1.svg"
-          />
-        </div>
-        <a className={styles.whatIsDpl1}>Back</a>
-      </div>
-      <div className={styles.addReviewPageInner}>
-        <div className={styles.whatIsDplGroup}>
-          <b className={styles.whatIsDpl2}>For Product/Services</b>
-          <b className={styles.whatIsDpl3}>Report Feedback</b>
-          <b className={styles.whatIsDpl4}>Staying Experience</b>
-        </div>
-      </div>
+      </div> */}
+      
       <section className={styles.groupParent}>
-        <img className={styles.groupIcon} alt="" src="/group-1@2x.png" />
-        <img
-          className={styles.groupIcon1}
-          loading="lazy"
-          alt=""
-          src="/group-2@2x.png"
-        />
+
         <div className={styles.componentStructure}>
-          <div className={styles.rectangleGroup}>
-            <div className={styles.frameItem} />
-            <div className={styles.frameInner} />
-          </div>
-          <ComponentPair />
-          <ComponentPair1 />
+      
+
           <div className={styles.xmlid2Parent}>
-            <img className={styles.xmlid2Icon} alt="" src="/xmlid-2.svg" />
-            <div className={styles.whatIsDpl5}>Arrival Clean | Lorem</div>
-            <div className={styles.whatIsDpl6}>
-              Service ID -OD45620000586963
-            </div>
-            <div className={styles.whatIsDpl7}>Lorem ipsum dolor sit ...</div>
-            <b className={styles.whatIsDpl8}>Re-Book</b>
-            <div className={styles.whatIsDpl9}>Bottled Water | Lorem</div>
-            <div className={styles.whatIsDpl10}>
-              Product ID - OD45620000358645
-            </div>
-            <div className={styles.whatIsDpl11}>Lorem ipsum dolor sit ...</div>
-            <div className={styles.rectangleDiv} />
-            <div className={styles.whatIsDpl12}>Arrival Clean | Lorem</div>
-            <div className={styles.whatIsDpl13}>
-              Service ID -OD45620000586963
-            </div>
-            <div className={styles.whatIsDpl14}>Lorem ipsum dolor sit ...</div>
-            <div className={styles.frameChild1} />
-            <div className={styles.rectangleContainer}>
-              <div className={styles.frameChild2} />
-              <div className={styles.whatIsDpl15}>{`Count :  01 `}</div>
-              <img
-                className={styles.frameChild3}
-                alt=""
-                src="/group-289-2@2x.png"
-              />
-            </div>
-            <div className={styles.groupDiv}>
-              <div className={styles.frameChild2} />
-              <div className={styles.whatIsDpl15}>{`Count :  01 `}</div>
-              <img
-                className={styles.frameChild3}
-                alt=""
-                src="/group-289-2@2x.png"
-              />
-            </div>
-            <div className={styles.whatIsDpl17}>Bottled Water | Lorem</div>
-            <div className={styles.whatIsDpl18}>
-              Product ID - OD45620000358645
-            </div>
-            <div className={styles.whatIsDpl19}>Lorem ipsum dolor sit ...</div>
-            <div className={styles.frameChild6} />
-            <div className={styles.whatIsDpl20}>Arrival Clean | Lorem</div>
-            <div className={styles.whatIsDpl21}>
-              Service ID -OD45620000586963
-            </div>
-            <div className={styles.whatIsDpl22}>Lorem ipsum dolor sit ...</div>
-            <div className={styles.frameChild8} />
-            <div className={styles.whatIsDpl23}>Bottled Water | Lorem</div>
-            <div className={styles.whatIsDpl24}>
-              Product ID - OD45620000358645
-            </div>
-            <div className={styles.whatIsDpl25}>Lorem ipsum dolor sit ...</div>
-            <div className={styles.rectangleParent1}>
-              <div className={styles.frameChild2} />
-              <div className={styles.whatIsDpl15}>{`Count :  01 `}</div>
-              <img
-                className={styles.frameChild3}
-                alt=""
-                src="/group-289-2@2x.png"
-              />
-            </div>
-            <div className={styles.rectangleParent2}>
-              <div className={styles.frameChild2} />
-              <div className={styles.whatIsDpl15}>{`Count :  01 `}</div>
-              <img
-                className={styles.frameChild3}
-                alt=""
-                src="/group-289-2@2x.png"
-              />
-            </div>
-            <b className={styles.whatIsDpl28}>Re-Book</b>
-            <b className={styles.whatIsDpl29}>Re-Book</b>
-            <b className={styles.whatIsDpl30}>Re-Book</b>
-            <b className={styles.whatIsDpl31}>Re-Book</b>
-            <b className={styles.whatIsDpl32}>Re-Book</b>
-            <img className={styles.groupIcon2} alt="" src="/group1@2x.png" />
+    
             <div className={styles.frameChild14} />
             <div className={styles.componentContent}>
               <div className={styles.dPLComponentContainer}>
@@ -247,22 +138,22 @@ const AddReviewPage: NextPage = () => {
                     </div>
                     <div className={styles.whatIsDpl41}>Excellent</div>
                   </div>
-                  <img
+                  {/* <img
                     className={styles.xmlid2Icon2}
                     loading="lazy"
                     alt=""
                     src="/xmlid-2.svg"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
             <div className={styles.xMLIDContainer}>
-              <img
+              {/* <img
                 className={styles.xmlid2Icon3}
                 loading="lazy"
                 alt=""
                 src="/xmlid-2.svg"
-              />
+              /> */}
               <div className={styles.xMLIDContainerInner}>
                 <Button
                   className={styles.groupButton}
@@ -286,70 +177,6 @@ const AddReviewPage: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className={styles.frameSection}>
-        <div className={styles.frameChild25} />
-        <img
-          className={styles.groupIcon4}
-          loading="lazy"
-          alt=""
-          src="/group-4@2x.png"
-        />
-        <img
-          className={styles.groupIcon5}
-          loading="lazy"
-          alt=""
-          src="/group-5@2x.png"
-        />
-        <img className={styles.groupIcon6} alt="" src="/group-6@2x.png" />
-        <div className={styles.componentPairContainer}>
-          <img className={styles.groupIcon7} alt="" src="/group-7@2x.png" />
-          <img className={styles.groupIcon8} alt="" src="/group-8@2x.png" />
-        </div>
-        <img
-          className={styles.groupIcon9}
-          loading="lazy"
-          alt=""
-          src="/group-9@2x.png"
-        />
-        <img className={styles.groupIcon10} alt="" src="/group-10@2x.png" />
-        <div className={styles.groupGroup}>
-          <img className={styles.groupIcon7} alt="" src="/group-11@2x.png" />
-          <img className={styles.groupIcon12} alt="" src="/group-12@2x.png" />
-          <img
-            className={styles.groupIcon13}
-            loading="lazy"
-            alt=""
-            src="/group-13@2x.png"
-          />
-          <img className={styles.groupIcon14} alt="" src="/group-14@2x.png" />
-        </div>
-        <img className={styles.shadeIcon} alt="" src="/shade.svg" />
-      </section>
-      {/* <section className={styles.footer}>
-        <img className={styles.footerChild} alt="" src="/rectangle-17.svg" />
-        <div className={styles.footerContent}>
-          <div className={styles.logoContentParent}>
-            <div className={styles.logoContent}>
-              <img className={styles.shapeIcon} alt="" src="/vector-1.svg" />
-            </div>
-            <div className={styles.whatIsDplFrame}>
-              <b
-                className={styles.whatIsDpl42}
-              >{`Customized Message Defined In `}</b>
-            </div>
-            <div className={styles.brandLogo}>
-              <img
-                className={styles.fullLogo2}
-                alt=""
-                src="/full-logo-2@2x.png"
-              />
-            </div>
-            <div className={styles.groupContainer}>
-              <img className={styles.groupIcon15} alt="" src="/group-15.svg" />
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };
